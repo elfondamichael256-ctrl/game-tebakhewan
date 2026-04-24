@@ -1,323 +1,82 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KELL PORTOFOLIO | Portofolio</title>
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Font: Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <!-- File CSS Eksternal -->
-  <link rel="stylesheet" href="style_black.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐾 Game Tebak Nama Hewan · Skor Adaptif</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="game-container" id="gameApp">
+        <!-- HEADER STATIS -->
+        <h1>🐘 TEBAK HEWAN</h1>
+        <div class="text-center">
+            <span class="subhead">⭐ Sistem Skor Adaptif ⭐</span>
+        </div>
 
-<!-- Navigasi dengan nama website -->
-<nav>
-  <div class="nav-brand">
-    <i></i>
-    <span>KELL.</span>
-  </div>
-  <div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#statistic">Statistic</a>
-    <a href="#pengalaman">Pengalaman</a>
-    <a href="#skills">Skills</a>
-    <a href="#project">Project</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<main class="container">
-
-  <!-- 1. HOME (Landing) -->
-  <section id="home">
-    <div class="home-wrapper">
-      <div class="home-content">
-        <h1>
-          KELL<br> <span class="home-highlight">PORTOFOLIO</span></h1>
-        <div class="home-sub">
-          Web Developer & Software engginer
-        </div>
-        <div style="margin-top: 32px;">
-          <a href="#project" class="cta-button">Lihat karya →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 2. ABOUT ME -->
-  <section id="about">
-    <h2 class="section-title">Tentang Saya</h2>
-    <div class="about-grid">
-      <img src="image/FotoHMTL.webp" alt="Foto HTML" class="profile-pic">
-      <div class="about-text">
-        <div class="about-name">Halo, Saya Software engginer</div>
-        <div>
-          <span class="skill-tag"><i class="fas fa-code"></i> HTML & CSS</span>
-          <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive UI</span>
-          <span class="skill-tag"><i class="fas fa-paint-brush"></i> Python</span>
-        </div>
-        <div class="short-bio">
-          Saya Adalah Seorang Software engginer yang baru saja terjun di dunia website portofolio, dengan pengalaman 11 bulan saya memiliki tujuan untuk menjadi Programmer Profesional, Saya sanggat suka menggembangkan Website berbasis HTML & CSS. <br>
-          diwaktu luang(Gabut), biasanya saya bermain Game Delta force, Roblox CDID, & minecraft. <br>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. STATISTIC -->
-  <section id="statistic">
-    <h2 class="section-title">Statistik</h2>
-    <div class="stat-grid">
-      <div class="stat-card">
-        <div class="stat-number">2</div>
-        <div class="stat-label">Website</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">3</div>
-        <div class="stat-label">Project</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">85%</div>
-        <div class="stat-label">Dedikasi</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">0</div>
-        <div class="stat-label">belum ada klien :)</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. PENGALAMAN -->
-  <section id="pengalaman">
-    <h2 class="section-title">Pengalaman</h2>
-    <div class="exp-item">
-      <div class="exp-year">2025</div>
-      <div class="exp-desc">
-        <h3>Peserta PTA 2025</h3>
-        <div class="exp-company">SMK Negeri Pasirian</div>
-      </div>
-    </div>
-    <div class="exp-item">
-      <div class="exp-year">2025</div>
-      <div class="exp-desc">
-        <h3>Lomba Arek A.I</h3>
-        <div class="exp-company">SMK Negri Pasirian</div>
-      </div>
-    </div>
- </section>
-
-  <!-- 5. SKILLS (dengan Skill Bar) -->
-  <section id="skills" class="skills">
-    <h2 class="section-title">Keahlian</h2>
-    <div class="skills-container">
-        <!-- Skill 1 -->
-         <div class="skill-item">
-        <div class="skill-name">
-          <i class="fab fa-html5"></i> HTML
-        </div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 64%">64%</div>
-        </div>
-      </div>
-      <!-- SKill 2 -->
-       <div class="skill-item">
-        <div class="skill-name">
-          <i class="fab fa-css3-alt"></i> CSS
-        </div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 50%">50%</div>
-        </div>
-      </div>
-      <!-- Skill 3 -->
-         <div class="skill-item">
-        <div class="skill-name">
-          <i class="fab fa-python"></i> Python
-        </div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 41%">41%</div>
-        </div>
-      </div>
-       <!-- Skill 4 -->
-       <div class="skill-item">
-        <div class="skill-name">
-          <i class="fab fa-js"></i> Javasrcipt
-        </div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 5%;">5%</div>
-        </div>
-       </div>
-       <!-- Skill 5 -->
-       <div class="skill-item">
-        <div class="skill-name">
-          <i class="fab fa-php"></i> PHP
-        </div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 35%">35%</div>
-        </div>
-      </div>
-      <!-- skill 6 -->
-       <div class="skill-item">
-        <div class="skill-name">
-          <i class="fas fa-microchip"></i> Arduino
-        </div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 25%">25%</div>
-        </div>
-      </div>
-      <!-- skill 7 -->
-       <div class="skill-item">
-        <div class="skill-name">
-          <i class="fab fa-microsoft"></i> Mirosoft Office
-        </div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 85%">85%</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. PROJECT (dengan foto/gambar) -->
-  <div id="project" class="container">
-        <h1>Project & Game</h1>
-        <p class="subtitle"></p>
-
-        <!-- Grid Project -->
-        <div class="project-grid">
+        <!-- AREA SETUP -->
+        <div id="setupArea">
+            <div class="rules-box">
+                <strong>📜 ATURAN & CARA BERMAIN</strong><br>
+                • Pilih level → tentukan jumlah soal & poin dasar.<br>
+                • Ketik <strong>'HINT'</strong> (maks 2x/soal) untuk buka huruf.<br>
+                • Poin benar = poin dasar - penalti hint (min 1).<br>
+                • Bonus salah beruntun +8 poin.<br>
+                • Typo dianggap salah.<br>
+                • Ketik <strong>'QUIT'</strong> untuk keluar kapan saja.
+            </div>
             
-            <!-- Project Card 1: Robot Line Follower -->
-            <div class="project-card" data-project="linefollower">
-                <div class="project-image">
-                    <img src="image/FotoGulir1.webp" alt="Robot Line Follower">
-                </div>
-                <div class="project-content">
-                    <div class="project-icon"><i class="fas fa-microchip"></i></div>
-                    <div class="project-title">Robot Line Follower</div>
-                    <div class="project-desc">Robot yang dapat berjalan mengikuti garis menggunakan sensor inframerah.</div>
-                    <span class="project-tag">Sensor IR | Arduino IDE</span> <br>
-                    <span class="project-tag selengkapnya"><i class="fas fa-eye"></i> Selengkapnya</span>
-                </div>
+            <h3 style="margin: 10px 0 0 15px; color:#2a523b;">🎚️ Pilih Level:</h3>
+            <div class="level-selector">
+                <button class="level-btn" data-level="1">🌱 MUDAH<br><small>15 soal · 20 poin</small></button>
+                <button class="level-btn" data-level="2">🍂 SEDANG<br><small>25 soal · 15 poin</small></button>
+                <button class="level-btn" data-level="3">🔥 SULIT<br><small>75 soal · 12 poin</small></button>
             </div>
-
-            <!-- Project Card 2: Robot Lengan (Robotic Arm) -->
-            <div class="project-card" data-project="roboticarm">
-                <div class="project-image">
-                    <img src="image/CuplikanWebsite1.webp" alt="Webstie">
-                </div>
-                <div class="project-content">
-                    <div class="project-icon"><i class="fas fa-code"></i></div>
-                    <div class="project-title">Website Portofolio</div>
-                    <div class="project-desc">Website Yang berisi Dokumentasi project saya.</div>
-                    <span class="project-tag">HTML| CSS | Javascript</span> <br>
-                    <span class="project-tag selengkapnya"><i class="fas fa-eye"></i> Selengkapnya</span>
-                </div>
-            </div>
-
-            <!-- Project Card 3: Game Website -->
-            <div class="project-card" data-project="drone">
-                <div class="project-image">
-                    <img src="image/Gamepad3.webp" alt="Gamepad">
-                </div>
-                <div class="project-content">
-                    <div class="project-icon"><i class="fas fa-gamepad"></i></div>
-                    <div class="project-title">Game Berbasis Python</div>
-                    <div class="project-desc">Game Tebak kata hewan yang mampu mengasah otak pemainya.</div>
-                    <span class="project-tag">Python </span> <br>
-                    <span class="project-tag selengkapnya"><i class="fas fa-eye"></i> Selengkapnya</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- MODAL OVERLAY + KOTAK DETAIL -->
-    <div class="modal-overlay" id="projectModal">
-        <div class="detail-box">
             
-            <!-- Header Modal -->
-            <div class="detail-header">
-                <i class="fas fa-microchip" id="modalIcon"></i>
-                <h2 id="modalTitle">Robot Line Follower</h2>
+            <div style="display: flex; justify-content: center; margin: 30px 0 10px;">
+                <button id="startGameBtn" class="btn btn-primary" style="padding: 18px 45px; font-size:1.4rem;">▶ MULAI PERMAINAN</button>
+            </div>
+        </div>
+
+        <!-- AREA GAME AKTIF -->
+        <div id="playArea" class="hidden">
+            <div class="header-panel">
+                <span class="level-badge" id="levelDisplay">MUDAH</span>
+                <span class="score-box" id="scoreDisplay">0</span>
+            </div>
+            
+            <div style="text-align:right; font-weight:500; margin-bottom:5px;">
+                <span id="progressIndicator">Soal 1/15</span>
+            </div>
+            
+            <div class="question-area">
+                <div class="animal-word" id="wordDisplay">_ _ _ _ _</div>
+            </div>
+            
+            <div class="meta-info">
+                <span class="hint-counter" id="hintUsedDisplay">💡 Hint 0/2</span>
+                <span class="streak-badge" id="streakDisplay">⚠️ Salah beruntun: 0</span>
             </div>
 
-            <!-- Galeri Foto Gulir -->
-            <div class="scrollable-gallery">
-                <div class="gallery-label">
-                    <i class="fas fa-images"></i> Galeri Project (Geser →)
+            <div class="input-section">
+                <input type="text" id="answerInput" placeholder="Ketik jawaban / HINT / QUIT" autocomplete="off" />
+                <div class="action-buttons">
+                    <button class="btn btn-warning" id="hintButton">🕵️ HINT</button>
+                    <button class="btn" id="submitButton">✔ JAWAB</button>
                 </div>
-                <div class="gallery-scroll-container" id="galleryContainer">
-                    <!-- Gambar akan di-generate oleh JavaScript -->
-                </div>
             </div>
-
-            <!-- Konten Deskripsi Detail -->
-            <div class="detail-content-scrollable" id="modalContent">
-                <p>Deskripsi detail akan muncul di sini...</p>
+            
+            <div style="display:flex; gap:8px; margin-top:8px;">
+                <button class="btn" id="quitButton" style="background:#e1400a;">🚪 QUIT</button>
+                <button class="btn" id="restartButton" style="background:#17a5d8;">🔄 GANTI LEVEL</button>
             </div>
-
-            <!-- Footer Modal -->
-            <div class="detail-footer">
-                <button class="btn-close" id="closeModalBtn">
-                    <i class="fas fa-times"></i> Tutup Detail
-                </button>
+            
+            <div class="feedback" id="feedbackMessage">
+                ✨ Ketik jawaban, atau gunakan HINT.
             </div>
         </div>
     </div>
-<script src="script.js"></script>
 
-<!-- Website & Game -->
- <section>
-    <h2 class="section-title">Website & Game</h2>
-    <div class="other-grid">
-      
-      <!--Game Website 1 -->
-      <div class="other-card">
-        <div class="other-image">
-          <img src="image/Gamepad3.webp" alt="game ">
-        </div>
-        <div class="other-content">
-          <div class="other-icon"><i class="fas fa-gamepad"></i></div>
-          <div class="other-title">Tebak Kata Hewan</div>
-          <div class="other-desc">Klik link dibawah ini untuk menuju game tebak kata hewan.</div>
-           <span class="other-tag"><a href="https://elfondamichael256-ctrl.github.io/game-tebakhewan/">Klik Disini</a></span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. CONTACT ME -->
-  <section id="contact">
-    <h2 class="section-title">Hubungi Saya</h2>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <!-- Alamat -->
-        <p><i class="fas fa-map-pin"></i> Indonesia, Jawa Timur, Kab.Lumajang, Kec.Pasirian, Des.Gondoruso</p>
-        <!-- Email -->
-        <p></a><i class="fas fa-envelope"></i>elfondamichael09@gmail.com</p>
-        <!-- Nomer telepon -->
-        <p><i class="fas fa-phone-alt"></i> +62 812-3239-6069</p>
-        <!-- akun github -->
-        <p><i class="fab fa-github"></i> <a href="https://github.com/elfondamichael256-ctrl" class="contact-link">github.com/elfondamichael256-ctrl</a></p>
-
-        <!-- Social media -->
-        <div class="social-links">
-          <a href="tiktok.com/@michael_ajah4" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
-          <a href="https://www.instagram.com/prgmmichael?igsh=cWtnYzFpbmQ2amxv" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.instagram.com/prgmmichael?igsh=cWtnYzFpbmQ2amxv" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="container">
-    ©2026 KELL PORTOFOLIO | Dont ever Give up.
-  </div>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
