@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐾 Game Tebak Nama Hewan · Skor Adaptif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container" id="gameApp">
+        <!-- HEADER STATIS -->
+        <h1>🐘 TEBAK HEWAN</h1>
+        <div class="text-center">
+            <span class="subhead">⭐ Sistem Skor Adaptif ⭐</span>
+        </div>
+
+        <!-- AREA SETUP -->
+        <div id="setupArea">
+            <div class="rules-box">
+                <strong>📜 ATURAN & CARA BERMAIN</strong><br>
+                • Pilih level → tentukan jumlah soal & poin dasar.<br>
+                • Ketik <strong>'HINT'</strong> (maks 2x/soal) untuk buka huruf.<br>
+                • Poin benar = poin dasar - penalti hint (min 1).<br>
+                • Bonus salah beruntun +8 poin.<br>
+                • Typo dianggap salah.<br>
+                • Ketik <strong>'QUIT'</strong> untuk keluar kapan saja.
+            </div>
+            
+            <h3 style="margin: 10px 0 0 15px; color:#2a523b;">🎚️ Pilih Level:</h3>
+            <div class="level-selector">
+                <button class="level-btn" data-level="1">🌱 MUDAH<br><small>15 soal · 20 poin</small></button>
+                <button class="level-btn" data-level="2">🍂 SEDANG<br><small>25 soal · 15 poin</small></button>
+                <button class="level-btn" data-level="3">🔥 SULIT<br><small>75 soal · 12 poin</small></button>
+            </div>
+            
+            <div style="display: flex; justify-content: center; margin: 30px 0 10px;">
+                <button id="startGameBtn" class="btn btn-primary" style="padding: 18px 45px; font-size:1.4rem;">▶ MULAI PERMAINAN</button>
+            </div>
+        </div>
+
+        <!-- AREA GAME AKTIF -->
+        <div id="playArea" class="hidden">
+            <div class="header-panel">
+                <span class="level-badge" id="levelDisplay">MUDAH</span>
+                <span class="score-box" id="scoreDisplay">0</span>
+            </div>
+            
+            <div style="text-align:right; font-weight:500; margin-bottom:5px;">
+                <span id="progressIndicator">Soal 1/15</span>
+            </div>
+            
+            <div class="question-area">
+                <div class="animal-word" id="wordDisplay">_ _ _ _ _</div>
+            </div>
+            
+            <div class="meta-info">
+                <span class="hint-counter" id="hintUsedDisplay">💡 Hint 0/2</span>
+                <span class="streak-badge" id="streakDisplay">⚠️ Salah beruntun: 0</span>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="answerInput" placeholder="Ketik jawaban / HINT / QUIT" autocomplete="off" />
+                <div class="action-buttons">
+                    <button class="btn btn-warning" id="hintButton">🕵️ HINT</button>
+                    <button class="btn" id="submitButton">✔ JAWAB</button>
+                </div>
+            </div>
+            
+            <div style="display:flex; gap:8px; margin-top:8px;">
+                <button class="btn" id="quitButton" style="background:#e1400a;">🚪 QUIT</button>
+                <button class="btn" id="restartButton" style="background:#17a5d8;">🔄 GANTI LEVEL</button>
+            </div>
+            
+            <div class="feedback" id="feedbackMessage">
+                ✨ Ketik jawaban, atau gunakan HINT.
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
